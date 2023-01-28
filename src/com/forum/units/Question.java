@@ -18,6 +18,7 @@ public class Question extends AbstractEntity {
 
 		// please write your code below and follow this instruction:
 		// 1. Call the parent class' setId method and pass in lastEntry as the method variable;
+		super.setId(lastEntry);
 	}
 
 	/**
@@ -28,6 +29,7 @@ public class Question extends AbstractEntity {
 	public String getTitle() {
 		// please write your code here
 		// you should return the instance variable title of this question
+		return title;
 	}
 
 
@@ -39,6 +41,7 @@ public class Question extends AbstractEntity {
 	public void setTitle(String title) {
 		// please write your code here
 		// Set the instance variable title to the parameter variable title
+		this.title = title;
 	}
 
 	/**
@@ -49,6 +52,7 @@ public class Question extends AbstractEntity {
 	public String getMessage() {
 		// please write your code here
 		// You should return the instance variable message of this question
+		return message;
 	}
 
 	/**
@@ -59,6 +63,7 @@ public class Question extends AbstractEntity {
 	public void setMessage(String message) {
 		// please write your code here
 		// you should set the instance variable message to the parameter variable message
+		this.message = message;
 	}
 
 	/**
@@ -69,6 +74,7 @@ public class Question extends AbstractEntity {
 	public User getUser() {
 		// please write your code here
 		// You should return the instance variable user of this question
+		return user;
 	}
 
 	/**
@@ -79,6 +85,7 @@ public class Question extends AbstractEntity {
 	public void setUser(User user) {
 		// please write your code here
 		// You should set the instance variable user to the parameter variable user
+		this.user = user;
 	}
 
 	/**
@@ -89,6 +96,7 @@ public class Question extends AbstractEntity {
 	public int getUpvoteCount() {
 		// please write your code here
 		// You should return the instance variable upvoteCount
+		return upvoteCount;
 	}
 
 	/**
@@ -97,6 +105,7 @@ public class Question extends AbstractEntity {
 	public void increaseUpvoteCount() {
 		// write your code here
 		// Increase the number stored in the instance variable upvoteCount by 1
+		++upvoteCount;
 	}
 
 }
